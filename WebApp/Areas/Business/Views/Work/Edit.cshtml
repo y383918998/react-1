@@ -1,0 +1,60 @@
+﻿@model RightControl.Model.WorkModel
+@{ ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutForm.cshtml"; }
+
+
+<div class="layui-col-md12 top10">
+    <form class="layui-form" id="form" action="/Business/Work/Edit" method="post">
+
+
+        <div class="layui-form-item">
+            <input type="hidden"  name="Id" value="@Model.Id"/>
+            <label class="layui-form-label">docterName</label>
+            <div class="layui-input-inline">
+                @Html.DropDownList("UId", null, "-请选择医生-", new Dictionary<string, object> { { "lay-verify", "required" }, { "lay-vertype", "tips" }, { "class", "layui-input"},{ "lay-filter", "UId" } } )
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">BeginTime</label>
+            <div class="layui-input-inline">
+
+                <input name="BeginTime" id="BeginTime" lay-verify="required" value="@Model.BeginTime.ToString("yyyy/MM/dd HH:mm")" placeholder="yyyy/MM/dd HH:mm:ss" lay-vertype="tips" class="layui-input" type="text">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">EndTime</label>
+            <div class="layui-input-inline">
+                <input name="EndTime" id="EndTime" lay-verify="required" value="@Model.EndTime.ToString("yyyy/MM/dd HH:mm")" placeholder="yyyy/MM/dd HH:mm:ss" lay-vertype="tips" class="layui-input" type="text">
+
+
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit="" lay-filter="submitForm" id="submitForm">Submit</button>
+                <button type="reset" class="layui-btn layui-btn-primary">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>layui.use(['form', 'laydate'], function () {
+        var form = layui.form;
+        var laydate = layui.laydate;
+         var $ = layui.$;
+        //日期
+        laydate.render({
+            elem: '#BeginTime',
+            format: 'yyyy/MM/dd HH:mm' //指定时间格式
+        });
+        laydate.render({
+            elem: '#EndTime',
+            format: 'yyyy/MM/dd HH:mm' //指定时间格式
+        });
+
+             $("#UId").val('@Model.UId');
+             form.render('select');
+        submitForm(form, "success"); //监听提交
+    });</script>
+

@@ -1,0 +1,11 @@
+D:\迅雷下载\backstage-master\RightControl.Model\bin\Debug\RightControl.Model.dll
+D:\迅雷下载\backstage-master\RightControl.Model\bin\Debug\RightControl.Model.pdb
+D:\迅雷下载\backstage-master\RightControl.Model\bin\Debug\DapperExtensions.dll
+D:\迅雷下载\backstage-master\RightControl.Model\bin\Debug\Dapper.dll
+D:\迅雷下载\backstage-master\RightControl.Model\bin\Debug\DapperExtensions.pdb
+D:\迅雷下载\backstage-master\RightControl.Model\bin\Debug\Dapper.xml
+D:\迅雷下载\backstage-master\RightControl.Model\obj\Debug\RightControl.Model.csprojAssemblyReference.cache
+D:\迅雷下载\backstage-master\RightControl.Model\obj\Debug\RightControl.Model.csproj.CoreCompileInputs.cache
+D:\迅雷下载\backstage-master\RightControl.Model\obj\Debug\RightControl.Model.csproj.CopyComplete
+D:\迅雷下载\backstage-master\RightControl.Model\obj\Debug\RightControl.Model.dll
+D:\迅雷下载\backstage-master\RightControl.Model\obj\Debug\RightControl.Model.pdb
