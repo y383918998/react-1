@@ -1,0 +1,60 @@
+﻿@model RightControl.Model.WorkModel
+@{ ViewBag.Title = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutForm.cshtml"; }
+
+
+<div class="layui-col-md12 top10">
+    <form class="layui-form" id="form" action="/Business/Work/Add" method="post">
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">Doctor</label>
+            <div class="layui-input-inline">
+                @Html.DropDownList("UId", null, "-Please Select-", new Dictionary<string, object> { { "lay-verify", "required" }, { "lay-vertype", "tips" }, { "class", "layui-input" } })
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">BeginTime</label>
+            <div class="layui-input-inline">
+
+                <input name="BeginTime" id="BeginTime" lay-verify="required" placeholder="yyyy-MM-dd HH:mm:ss" lay-vertype="tips" class="layui-input" type="text">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">EndTime</label>
+            <div class="layui-input-inline">
+                <input name="EndTime" id="EndTime" lay-verify="required" placeholder="yyyy-MM-dd HH:mm:ss" lay-vertype="tips" class="layui-input" type="text">
+
+
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit="" lay-filter="submitForm" id="submitForm">Submit</button>
+                <button type="reset" class="layui-btn layui-btn-primary">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    layui.use(['form', 'laydate'], function () {
+        var form = layui.form;
+        var laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#BeginTime',
+            format: 'yyyy-MM-dd HH:mm:ss' //指定时间格式
+        });
+        laydate.render({
+            elem: '#EndTime',
+            format: 'yyyy-MM-dd HH:mm:ss' //指定时间格式
+        });
+
+        submitForm(form, "success"); //监听提交
+    });</script>
+
