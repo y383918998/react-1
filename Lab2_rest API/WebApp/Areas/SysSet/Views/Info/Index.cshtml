@@ -1,0 +1,156 @@
+﻿@model RightControl.Model.UserModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutSinglePage.cshtml";
+}
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">Set up my profile</div>
+                <div class="layui-card-body" pad15>
+                    <form action="/SysSet/Info/Index" method="post" class="layui-form" lay-filter="">
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">RoleName</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="RoleName" value=" @Model.RoleName" readonly class="layui-input">
+                            </div>
+                          
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">UserName</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="UserName" value="@Model.UserName" readonly class="layui-input">
+                            </div>
+                          
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">RealName</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="RealName" value="@Model.RealName" lay-verify="nickname" autocomplete="off" placeholder="请输入昵称" class="layui-input">
+                            </div>
+                        </div>
+                        @{ if (Model.RoleName=="医生")
+                            {
+
+
+                    <div class="layui-inline">
+                                                <label class="layui-form-label">Profession</label>
+                        <div class="layui-input-inline">
+                                                    <select name="Department" id="Department" lay-verify="required" lay-search="">
+                                                        <option value="">Select</option>
+                                                        <option value="家庭医生">家庭医生</option>
+                                                        <option value="耳鼻喉科医生">耳鼻喉科医生</option>
+                                                        <option value="皮肤科医生">皮肤科医生</option>
+                                                        <option value="眼科医生">眼科医生</option>
+                                                        <option value="神经科医生">神经科医生</option>
+                                                        <option value="骨科医生">骨科医生</option>
+                                                        <option value="儿科医生">儿科医生</option>
+                                                    </select>
+                        </div>
+                    </div> } }
+
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">Gender</label>
+                            <div class="layui-input-block">
+                                @Html.GanderRadioHtml(Model.Gender)
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">头像</label>
+                            <div class="layui-input-inline">
+                                <input name="HeadShot" lay-verify="required" readonly id="HeadShot" placeholder="Picture address" value="@Model.HeadShot" class="layui-input">
+                            </div>
+                            <div class="layui-input-inline layui-btn-container" style="width: auto;">
+                                <button type="button" class="layui-btn layui-btn-primary" id="btnUpload">
+                                    <i class="layui-icon">&#xe67c;</i>Upload pictures
+                                </button>
+                                @*<a class="layui-btn layui-btn-primary" id="btnPreview">查看图片</a>*@
+                                <div id="layer-photos-demo" class="fr">
+                                    <img class="img-headshot" id="imgHeadShot" layer-pid="HeadShot" layer-src="@Model.HeadShot" src="@Model.HeadShot" alt="Avatar preview">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">Phone</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="Phone" value="@Model.Phone" lay-verify="phone" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">Email</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="Email" value="@Model.Email" lay-verify="email" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">Remark</label>
+                            <div class="layui-input-block">
+                                <textarea name="Remark" placeholder="Remark" class="layui-textarea">@Model.Remark</textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn fl" lay-submit lay-filter="setmyinfo">submit</button>
+                                <button type="reset" class="layui-btn layui-btn-primary fl">reset</button>
+                                <div class="div-msg fl" style="float:left;">@ViewBag.Msg</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    layui.use(['upload', 'layer','form'], function () {
+
+
+
+        var upload = layui.upload,
+            form = layui.form,
+                layer=layui.layer;
+            var $ = layui.$;
+            //执行实例
+            var uploadInst = upload.render({
+                elem: '#btnUpload' //绑定元素
+                , url: '/SysSet/Info/ExportFile/' //上传接口
+              , size: '@ViewBag.MaxFileUpload'
+              , exts: '@ViewBag.UploadFileType'
+              , done: function (res) {  //上传完毕回调
+                  //假设code=0代表上传成功
+                  if (res.code == 0) {
+                      //do something （比如将res返回的图片链接保存到表单的隐藏域）
+                      $("#HeadShot").val(res.src);
+                      $("#imgHeadShot").attr("src", res.src);
+                      $("#imgHeadShot").attr("layer-src", res.src)
+                  }
+              }
+              , error: function () { //请求异常回调
+
+              }
+            });
+
+
+           
+
+
+            //只需要在修改后重新渲染form表单中的select
+            $("#Department").val('@Model.Department');
+            form.render('select');
+
+
+
+
+
+            layer.photos({
+                photos: '#layer-photos-demo',
+                anim: 1
+            });
+        });
+</script>
+

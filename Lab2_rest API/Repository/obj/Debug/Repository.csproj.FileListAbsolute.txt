@@ -1,0 +1,141 @@
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Repository.dll.config
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Repository.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Repository.pdb
+D:\迅雷下载\backstage-master\Repository\bin\Debug\BouncyCastle.Crypto.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Dapper.Contrib.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Dapper.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\DapperExtensions.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Google.Protobuf.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\K4os.Compression.LZ4.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\K4os.Hash.xxHash.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\MySql.Data.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Common.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.IRepository.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Model.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Buffers.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Memory.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Numerics.Vectors.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\ZstdNet.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Newtonsoft.Json.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Web.Mvc.dll
+D:\迅雷下载\backstage-master\Repository\bin\Debug\DapperExtensions.pdb
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Common.pdb
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.IRepository.pdb
+D:\迅雷下载\backstage-master\Repository\bin\Debug\RightControl.Model.pdb
+D:\迅雷下载\backstage-master\Repository\bin\Debug\BouncyCastle.Crypto.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Dapper.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Dapper.Contrib.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Google.Protobuf.pdb
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Google.Protobuf.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\K4os.Compression.LZ4.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\K4os.Hash.xxHash.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\MySql.Data.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Buffers.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Memory.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Numerics.Vectors.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\Newtonsoft.Json.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\System.Web.Mvc.xml
+D:\迅雷下载\backstage-master\Repository\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\迅雷下载\backstage-master\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+D:\迅雷下载\backstage-master\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+D:\迅雷下载\backstage-master\Repository\obj\Debug\Repository.csproj.CopyComplete
+D:\迅雷下载\backstage-master\Repository\obj\Debug\RightControl.Repository.dll
+D:\迅雷下载\backstage-master\Repository\obj\Debug\RightControl.Repository.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Repository.dll.config
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Repository.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Repository.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\BouncyCastle.Crypto.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Dapper.Contrib.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Dapper.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\DapperExtensions.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Google.Protobuf.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\K4os.Compression.LZ4.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\K4os.Hash.xxHash.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\MySql.Data.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Common.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.IRepository.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Model.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Buffers.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Memory.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Numerics.Vectors.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\ZstdNet.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Newtonsoft.Json.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Web.Mvc.dll
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Common.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\DapperExtensions.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.IRepository.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\RightControl.Model.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\BouncyCastle.Crypto.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Dapper.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Dapper.Contrib.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Google.Protobuf.pdb
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Google.Protobuf.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\K4os.Compression.LZ4.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\K4os.Hash.xxHash.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\MySql.Data.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Buffers.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Memory.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Numerics.Vectors.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\Newtonsoft.Json.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\System.Web.Mvc.xml
+D:\个人\study\咸鱼\预约\Repository\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\个人\study\咸鱼\预约\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+D:\个人\study\咸鱼\预约\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+D:\个人\study\咸鱼\预约\Repository\obj\Debug\Repository.csproj.CopyComplete
+D:\个人\study\咸鱼\预约\Repository\obj\Debug\RightControl.Repository.dll
+D:\个人\study\咸鱼\预约\Repository\obj\Debug\RightControl.Repository.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Repository.dll.config
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Repository.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Repository.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\BouncyCastle.Crypto.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Dapper.Contrib.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Dapper.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\DapperExtensions.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Google.Protobuf.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\K4os.Compression.LZ4.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\K4os.Hash.xxHash.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\MySql.Data.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Common.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.IRepository.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Model.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Buffers.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Memory.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Numerics.Vectors.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\ZstdNet.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Newtonsoft.Json.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Web.Mvc.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Common.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\DapperExtensions.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.IRepository.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\RightControl.Model.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\BouncyCastle.Crypto.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Dapper.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Dapper.Contrib.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Google.Protobuf.pdb
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Google.Protobuf.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\K4os.Compression.LZ4.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\K4os.Hash.xxHash.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\MySql.Data.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Buffers.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Memory.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Numerics.Vectors.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\Newtonsoft.Json.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\System.Web.Mvc.xml
+E:\系统默认\桌面\GUI\rest API\预约\Repository\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+E:\系统默认\桌面\GUI\rest API\预约\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+E:\系统默认\桌面\GUI\rest API\预约\Repository\obj\Debug\Repository.csproj.CopyComplete
+E:\系统默认\桌面\GUI\rest API\预约\Repository\obj\Debug\RightControl.Repository.dll
+E:\系统默认\桌面\GUI\rest API\预约\Repository\obj\Debug\RightControl.Repository.pdb
