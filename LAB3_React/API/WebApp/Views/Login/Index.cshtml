@@ -1,0 +1,126 @@
+﻿@{ Layout = null; }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Areas/Admin/Content/fonts/iconfont.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/login.css" rel="stylesheet" />
+    <script src="~/Areas/Admin/Content/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Areas/Admin/Content/js/jquery.cookie.js"></script>
+    <script src="~/Areas/Admin/Content/js/jquery.md5.js"></script>
+
+</head>
+<body style=" no-repeat; background-size: 100% 100%; background-attachment: fixed; background-color:slategray">
+
+    <div class="wrapper">
+        <div class="container">
+          
+            <form class="form" style=" background-color:black">
+                <div class="row">
+                    <input id="txt_account" type="text" placeholder="UserName">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="row">
+                    <input id="txt_password" type="password" placeholder="PassWord">
+                    <i class="fa fa-key"></i>
+                </div>
+
+                <div class="row">
+                    <button id="login_button" type="button" style="background-color:gray"><span>Login</span></button>
+                </div>
+                <div class="row">
+                </div>
+            </form>
+            <div class="login_tips"></div>
+        </div>
+      
+    </div>
+    <div class="copyright">
+    </div>
+    <script type="text/javascript">(function ($) {
+            $.login = {
+                formMessage: function (msg) {
+                    $('.login_tips').find('.tips_msg').remove();
+                    $('.login_tips').append('<div class="tips_msg"><i class="fa fa-question-circle"></i>' + msg + '</div>');
+                },
+                loginClick: function () {
+                    var $username = $("#txt_account");
+                    var $password = $("#txt_password");
+                    var $code = $("#txt_code");
+                    if ($username.val() == "") {
+                        $username.focus();
+                        $.login.formMessage('Please enter your username');
+                        return false;
+                    } else if ($password.val() == "") {
+                        $password.focus();
+                        $.login.formMessage('Please enter your password。');
+                        return false;
+                    }  else {
+                        $("#login_button").attr('disabled', 'disabled').find('span').html("loading...");
+                        $.ajax({
+                            url: "/Login/CheckLogin",
+                            data: { username: $.trim($username.val()), password: $.md5($.trim($password.val())), code: $.trim($code.val()) },
+                            type: "post",
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.state == "success") {
+                                    $("#login_button").find('Success').html("，loading...");
+                                    window.setTimeout(function () {
+                                        window.location.href = "/Admin/Home/Index";
+                                    }, 500);
+                                } else {
+                                    $("#login_button").removeAttr('disabled').find('span').html("Login");
+                                    $("#switchCode").trigger("click");
+                                    $code.val('');
+                                    $.login.formMessage(data.message);
+                                }
+                            }
+                        });
+                    }
+                },
+                init: function () {
+                    $('.wrapper').height($(window).height());
+                    $(".container").css("margin-top", ($(window).height() - $(".container").height()) / 2 - 50);
+                    $(window).resize(function (e) {
+                        $('.wrapper').height($(window).height());
+                        $(".container").css("margin-top", ($(window).height() - $(".container").height()) / 2 - 50);
+                    });
+                    $("#switchCode").click(function () {
+                        $("#imgcode").attr("src", "/Admin/Login/GetAuthCode?time=" + Math.random());
+                    });
+                    var login_error = top.$.cookie('nfine_login_error');
+                    if (login_error != null) {
+                        switch (login_error) {
+                            case "overdue":
+                                $.login.formMessage("Overtime");
+                                break;
+                            case "OnLine":
+                                $.login.formMessage("Please login again");
+                                break;
+                            case "-1":
+                                $.login.formMessage("Please login again");
+                                break;
+                        }
+                        top.$.cookie('nfine_login_error', '', { path: "/", expires: -1 });
+                    }
+                    $("#login_button").click(function () {
+                        $.login.loginClick();
+                    });
+                    document.onkeydown = function (e) {
+                        if (!e) e = window.event;
+                        if ((e.keyCode || e.which) == 13) {
+                            document.getElementById("login_button").focus();
+                            document.getElementById("login_button").click();
+                        }
+                    }
+                }
+            };
+            $(function () {
+                $.login.init();
+            });
+        })(jQuery);</script>
+</body>
+</html>
